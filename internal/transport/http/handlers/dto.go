@@ -8,10 +8,10 @@ import (
 
 // recurrenceDTO — настройки повторяемости в HTTP-запросах и ответах.
 type recurrenceDTO struct {
-	Type       taskdomain.RecurrenceType  `json:"type"`
-	Interval   int                        `json:"interval,omitempty"`
-	DayOfMonth int                        `json:"day_of_month,omitempty"`
-	Dates      []string                   `json:"dates,omitempty"`
+	Type       taskdomain.RecurrenceType   `json:"type"`
+	Interval   int                         `json:"interval,omitempty"`
+	DayOfMonth int                         `json:"day_of_month,omitempty"`
+	Dates      []string                    `json:"dates,omitempty"`
 	Parity     taskdomain.RecurrenceParity `json:"parity,omitempty"`
 }
 

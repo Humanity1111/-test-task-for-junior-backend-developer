@@ -1,0 +1,3 @@
+ALTER TABLE tasks
+    ADD COLUMN IF NOT EXISTS scheduled_at TIMESTAMPTZ NULL,
+    ADD COLUMN IF NOT EXISTS recurrence    JSONB        NULL;
